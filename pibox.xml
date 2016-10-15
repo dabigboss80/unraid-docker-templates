@@ -37,13 +37,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/pibox/rtorrent</HostDir>
+      <HostDir>/mnt/disk1/appdata/pibox/rtorrent</HostDir>
       <ContainerDir>/opt/rtorrent</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/downloads</HostDir>
-      <ContainerDir>/opt/rtorrent/directory</ContainerDir>
+      <HostDir>/mnt/user/Downloads</HostDir>
+      <ContainerDir>/opt/rtorrent/share</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
