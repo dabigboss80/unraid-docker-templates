@@ -48,7 +48,7 @@
     </Volume>
   </Data>
   <Version></Version>
-  <WebUI>http://[IP]:[PORT:8443]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8443]/</WebUI>
   <Banner></Banner>
   <Icon></Icon>
   <ExtraParams></ExtraParams>
