@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Pibox</Name>
+  <Description>rtorrent client, rutorrent ui, cakebox streaming, password protected, over ssl, w/ persistent data</Description>
+  <Registry>https://hub.docker.com/r/seedboxes/pibox/</Registry>
+  <Repository>seedboxes/pibox</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PIBOX_USER</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>PIBOX_PASS</Name>
+      <Value></Value>
+    </Variable>
+    <Variable>
+      <Name>PIBOX_URL</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>60980</HostPort>
+        <ContainerPort>6980</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/pibox/rtorrent</HostDir>
+      <ContainerDir>/opt/rtorrent/ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/downloads</HostDir>
+      <ContainerDir>/opt/rtorrent/directory</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:8443]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+</Container>
