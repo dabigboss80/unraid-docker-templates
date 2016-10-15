@@ -38,7 +38,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/pibox/rtorrent</HostDir>
-      <ContainerDir>/opt/rtorrent/ContainerDir>
+      <ContainerDir>/opt/rtorrent</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
