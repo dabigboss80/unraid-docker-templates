@@ -26,7 +26,7 @@
       </Port>
       <Port>
         <HostPort>45566</HostPort>
-        <ContainerPort>455666</ContainerPort>
+        <ContainerPort>45566</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
